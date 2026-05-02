@@ -4,6 +4,9 @@
 
 ### Consequence admission before effect for AI and automated systems
 
+**ELYRIA SYSTEMS — VA**  
+**Samantha Revita · Terry Snyder**
+
 ![Elyria Runtime Law CI](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml/badge.svg)
 ![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)
 ![License](https://img.shields.io/badge/license-proprietary-red)
@@ -15,6 +18,15 @@ Most systems govern actors, actions, or outputs.
 **Elyria governs continuation.**
 
 </div>
+
+---
+
+## Authorship / Stewardship
+
+**Elyria Systems — VA**  
+**Samantha Revita · Terry Snyder**
+
+This repository is a public proof surface for Elyria Runtime Law v0.1.
 
 ---
 
@@ -213,5 +225,8 @@ See [`LICENSE.txt`](./LICENSE.txt) for full restrictions.
 
 **Most systems decide whether something may run.**  
 **Elyria determines whether continuation is lawful enough to become consequence.**
+
+**ELYRIA SYSTEMS — VA**  
+**Samantha Revita · Terry Snyder**
 
 </div>
