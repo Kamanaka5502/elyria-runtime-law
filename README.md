@@ -87,3 +87,50 @@ Evaluation only. No reuse or derivative rights.
 
 Most systems decide whether something may run.  
 Elyria determines whether continuation is lawful enough to become consequence.
+
+---
+
+## Runtime binding law
+
+Elyria evaluates consequence admissibility as a constrained state resolution:
+
+Σ_C(x) = ⟨Φ(x), A(x), U(x), V(x), B(x), R(x), H(x)⟩
+
+Where:
+
+Φ(x) = C(x) − M(x)  
+(capacity minus burden)
+
+A(x) = authority validity  
+U(x) = authorization state (binary)  
+V(x) ∈ Viab(R) (viability within regime constraints)  
+B(x) = breach condition (must be 0)  
+H(x) = continuity / coherence threshold  
+
+---
+
+## Binding condition
+
+A consequence may bind only if:
+
+Φ ≥ 0 ∧ A ≥ 0 ∧ U = 1 ∧ x ∈ Viab(R) ∧ B = 0 ∧ H ≥ H_min
+
+If any condition fails:
+
+→ consequence does not bind  
+→ runtime resolves to REFUSE, HALT, REDIRECT, or ESCALATE  
+
+---
+
+## Interpretation
+
+A system can be:
+
+- correct  
+- authenticated  
+- policy-aligned  
+
+and still fail consequence admissibility.
+
+Elyria enforces that distinction at the moment of execution.
+
