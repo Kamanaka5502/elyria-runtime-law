@@ -7,10 +7,9 @@
 **ELYRIA SYSTEMS — VA**  
 **Samantha Revita · Terry Snyder**
 
-![Elyria Runtime Law CI](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml/badge.svg)
-![Python](https://img.shields.io/badge/python-3.11%20%7C%203.12-blue)
 ![License](https://img.shields.io/badge/license-proprietary-red)
-![Status](https://img.shields.io/badge/status-proof%20surface-gold)
+![Status](https://img.shields.io/badge/status-public%20proof%20surface-gold)
+![Runtime](https://img.shields.io/badge/runtime-protected%20commercial%20layer-black)
 
 **Runtime law for consequence-bearing systems.**
 
@@ -27,6 +26,8 @@ Most systems govern actors, actions, or outputs.
 **Samantha Revita · Terry Snyder**
 
 This repository is a public proof surface for Elyria Runtime Law v0.1.
+
+It is intentionally non-runnable and non-implementation-bearing.
 
 ---
 
@@ -83,6 +84,9 @@ Where:
 | `V(x) ∈ Viab(R)` | viability within regime constraints |
 | `B(x)` | breach condition; must resolve to zero |
 | `H(x)` | continuation / coherence threshold |
+
+This expression is a public category marker and conceptual proof surface.  
+Production policy structures, corridor logic, client-specific evaluation rules, replay internals, and protected runtime implementation are not exposed here.
 
 ---
 
@@ -164,30 +168,33 @@ Replay must reproduce decision
 
 ---
 
-## What this package contains
+## Public proof surface
 
-- FastAPI backend for Elyria Runtime Law v0.1
-- Corridor evaluators for cyber, chemistry, and bio examples
-- Deterministic receipt generation
-- Replay verification endpoint
-- Example JSON requests
-- Unit tests
-- CI validation for Python 3.11 and 3.12
+This repository shows:
+
+- category framing
+- public runtime-law vocabulary
+- consequence-admission semantics
+- runtime outcome morphology
+- receipt / replay direction
+- protected-scope boundaries
+
+This repository does **not** include:
+
+- runnable backend implementation
+- production source code
+- client corridors
+- corridor evaluators
+- example payloads
+- tests
+- schemas
+- receipt-generation internals
+- replay-verification internals
+- deployment instructions
 
 ---
 
-## Run
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -e ".[dev]"
-uvicorn app.main:app --reload --port 8001
-```
-
----
-
-## Proof
+## Proof claim
 
 A valid request can still fail consequence admissibility.
 
@@ -199,21 +206,23 @@ HALT   = no continuation
 This system prevents effect.  
 It does not merely observe it.
 
-Replay rule:
+Replay principle:
 
 ```text
 same request + same state + same policy + same corridor = same decision receipt
 ```
 
+The protected implementation proving this behavior is retained outside the public proof surface.
+
 ---
 
 ## Protected scope
 
-This repository is a public proof surface.
+This repository is publicly visible for evaluation of the concept, category, and proof framing only.
 
 It does not grant rights to reuse, reproduce, modify, deploy, or derive commercial systems.
 
-No internal decision logic, production policy structures, client corridors, or protected runtime substrate are licensed through this repository.
+No internal decision logic, production policy structures, client corridors, examples, tests, schemas, source code, replay internals, or protected runtime substrate are licensed through this repository.
 
 See [`LICENSE.txt`](./LICENSE.txt) for full restrictions.
 
