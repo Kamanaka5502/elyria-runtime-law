@@ -8,7 +8,7 @@ Most systems govern actors, actions, or outputs.
 **Elyria governs continuation.**
 
 The core object is not an action.  
-The core object is attempted becoming: a proposed transition pressing toward consequence.
+The core object is **attempted becoming**: a proposed transition pressing toward consequence.
 
 A proposed action can be possible, requested, authenticated, predicted, or workflow-complete and still fail consequence admissibility.
 
@@ -16,7 +16,7 @@ A proposed action can be possible, requested, authenticated, predicted, or workf
 
 ## Category
 
-Consequence admission before effect.
+**Consequence admission before effect.**
 
 Elyria Runtime Law evaluates whether a proposed consequence may enter, remain, redirect, halt, restart, or bind under live state.
 
@@ -34,15 +34,90 @@ They do not decide whether continuation remains lawful enough to become conseque
 
 ---
 
+## Runtime binding law
+
+Elyria evaluates consequence admissibility as a constrained state resolution:
+
+Σ_C(x) = ⟨Φ(x), A(x), U(x), V(x), B(x), R(x), H(x)⟩
+
+Where:
+
+Φ(x) = C(x) − M(x)  
+(capacity minus burden)
+
+A(x) = authority validity  
+U(x) = authorization state (binary)  
+V(x) ∈ Viab(R) (viability within regime constraints)  
+B(x) = breach condition (must be 0)  
+H(x) = continuity / coherence threshold
+
+---
+
+## Binding condition
+
+A consequence may bind only if:
+
+Φ ≥ 0 ∧ A ≥ 0 ∧ U = 1 ∧ x ∈ Viab(R) ∧ B = 0 ∧ H ≥ H_min
+
+If any condition fails:
+
+→ consequence does not bind  
+→ runtime resolves to REFUSE, HALT, REDIRECT, or ESCALATE
+
+---
+
+## Governing invariant
+
+No consequence persists without admissibility under current state.
+
+If admissibility fails at any point:
+
+→ continuation stops  
+→ consequence does not bind  
+→ prior state remains authoritative
+
+---
+
+## Interpretation
+
+A system can be:
+
+- correct
+- authenticated
+- policy-aligned
+
+and still fail consequence admissibility.
+
+Elyria enforces that distinction at the moment of execution.
+
+---
+
+## Execution boundary (conceptual)
+
+Proposed Action  
+      ↓  
+Admissibility Resolution (Φ, A, U, V, B, H)  
+      ↓  
+┌───────────────┬───────────────┬───────────────┐  
+│   EXECUTE     │    REFUSE     │     HALT      │  
+│ binds         │ no bind       │ stops         │  
+└───────────────┴───────────────┴───────────────┘  
+      ↓  
+Decision Receipt  
+      ↓  
+Replay (must reproduce decision)
+
+---
+
 ## Runtime outcomes
 
-EXECUTE — lawful support holds; consequence may bind.  
-REFUSE — attempted consequence lacks standing.  
-HALT — continuation stops because support, safety, viability, or breach condition failed.  
-REDIRECT — intent may continue only through a different lawful corridor.  
-ESCALATE — authorized review required before effect.  
-REBOUND — unsupported pressure returns; motion cannot continue forward.  
-RESTART — lawful re-entry after judged halt/recovery condition.
+**EXECUTE** — lawful support holds; consequence may bind.  
+**REFUSE** — attempted consequence lacks standing.  
+**HALT** — continuation stops because support, safety, viability, or breach condition failed.  
+**REDIRECT** — intent may continue only through a different lawful corridor.  
+**ESCALATE** — authorized review required before effect.  
+**REBOUND** — unsupported pressure returns; motion cannot continue forward.  
+**RESTART** — lawful re-entry after judged halt/recovery condition.
 
 ---
 
@@ -62,7 +137,7 @@ RESTART — lawful re-entry after judged halt/recovery condition.
 python -m venv .venv  
 source .venv/bin/activate  
 pip install -e ".[dev]"  
-uvicorn app.main:app --reload --port 8001  
+uvicorn app.main:app --reload --port 8001
 
 ---
 
@@ -71,7 +146,7 @@ uvicorn app.main:app --reload --port 8001
 A valid request can still fail consequence admissibility.
 
 REFUSE = no execution  
-HALT = no continuation  
+HALT = no continuation
 
 This system prevents effect. It does not observe it.
 
@@ -81,87 +156,11 @@ This system prevents effect. It does not observe it.
 
 Evaluation only. No reuse or derivative rights.
 
+See `LICENSE.txt` for full restrictions.
+
 ---
 
 ## Core sentence
 
 Most systems decide whether something may run.  
-Elyria determines whether continuation is lawful enough to become consequence.
-
----
-
-## Runtime binding law
-
-Elyria evaluates consequence admissibility as a constrained state resolution:
-
-Σ_C(x) = ⟨Φ(x), A(x), U(x), V(x), B(x), R(x), H(x)⟩
-
-Where:
-
-Φ(x) = C(x) − M(x)  
-(capacity minus burden)
-
-A(x) = authority validity  
-U(x) = authorization state (binary)  
-V(x) ∈ Viab(R) (viability within regime constraints)  
-B(x) = breach condition (must be 0)  
-H(x) = continuity / coherence threshold  
-
----
-
-## Binding condition
-
-A consequence may bind only if:
-
-Φ ≥ 0 ∧ A ≥ 0 ∧ U = 1 ∧ x ∈ Viab(R) ∧ B = 0 ∧ H ≥ H_min
-
-If any condition fails:
-
-→ consequence does not bind  
-→ runtime resolves to REFUSE, HALT, REDIRECT, or ESCALATE  
-
----
-
-## Interpretation
-
-A system can be:
-
-- correct  
-- authenticated  
-- policy-aligned  
-
-and still fail consequence admissibility.
-
-Elyria enforces that distinction at the moment of execution.
-
-
----
-
-## Governing invariant
-
-No consequence persists without admissibility under current state.
-
-If admissibility fails at any point:
-
-→ continuation stops  
-→ consequence does not bind  
-→ prior state remains authoritative  
-
-
----
-
-## Execution boundary (conceptual)
-
-Proposed Action  
-      ↓  
-Admissibility Resolution (Φ, A, U, V, B, H)  
-      ↓  
-┌───────────────┬───────────────┬───────────────┐  
-│   EXECUTE     │    REFUSE     │     HALT      │  
-│ binds         │ no bind       │ stops         │  
-└───────────────┴───────────────┴───────────────┘  
-      ↓  
-Receipt  
-      ↓  
-Replay (must reproduce decision)
-
+**Elyria determines whether continuation is lawful enough to become consequence.**
