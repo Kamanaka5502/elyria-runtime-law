@@ -134,3 +134,34 @@ and still fail consequence admissibility.
 
 Elyria enforces that distinction at the moment of execution.
 
+
+---
+
+## Governing invariant
+
+No consequence persists without admissibility under current state.
+
+If admissibility fails at any point:
+
+→ continuation stops  
+→ consequence does not bind  
+→ prior state remains authoritative  
+
+
+---
+
+## Execution boundary (conceptual)
+
+Proposed Action  
+      ↓  
+Admissibility Resolution (Φ, A, U, V, B, H)  
+      ↓  
+┌───────────────┬───────────────┬───────────────┐  
+│   EXECUTE     │    REFUSE     │     HALT      │  
+│ binds         │ no bind       │ stops         │  
+└───────────────┴───────────────┴───────────────┘  
+      ↓  
+Receipt  
+      ↓  
+Replay (must reproduce decision)
+
