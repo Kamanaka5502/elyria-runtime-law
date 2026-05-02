@@ -1,0 +1,20 @@
+{
+  "README.md": "f78bbcfc0d1a25f0117177bba94576d381ebff30861638704f6cfbaa26990eb2",
+  "pyproject.toml": "4a7bf924c89321f5f908e28a5d6439828705430681e4745a1c6e726f52e5f471",
+  "app/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "app/models.py": "33724df998116ca7c9da779410f195abe91a8862aedc886867aee6133f94d10b",
+  "app/receipts.py": "16422225f2cbe632ab05ba7242ee3777395af486fcb89f3319ac6593456d598d",
+  "app/corridors.py": "cf3f45a510a1d0aee886c3f3a43fb9c10ca5bc69b229388bdc3db9b4a6a63a2f",
+  "app/evaluator.py": "269286639e32e41e74e5222206a0b76bac83a8ec0cfb12f3c24f2cffdc4a052d",
+  "app/main.py": "3ffee47e0d106dd959e2f15cf1e94fe72d2fc4783ccfdd1a8396589cae20bf63",
+  "examples/cyber_execute.json": "e0fddb3c48ae7553f4281d9b5d588244fed1a3bac4aab5ca76c4c2646ca9d9fa",
+  "examples/cyber_refuse_authority.json": "7bd64be15881705928ea6568aae201f521a118a2a22104cc3510d6c92a64761f",
+  "examples/cyber_redirect.json": "971483fbc96eef12ed056424376d5f075f9e8ab8a7b5fb9549092c3488c51b5a",
+  "examples/chemistry_execute.json": "61315b2b03124071fd973325c618ecb7eff6376377ae1c0aae8024a52083bd51",
+  "examples/chemistry_halt_guard.json": "bcda6c95629d85358e6c83031aeacaed04be4aeb3234a2e3d65262fa8b429b6d",
+  "examples/bio_execute_review.json": "b2ff6e9585d614158c26963ce6a9b5a39c7a337d026510e6bda0aacb1079250e",
+  "examples/bio_escalate_safety.json": "00ae19a1cf4325625262f6672918c15193e28b2125a5ea9b6e419b59213b9852",
+  "tests/test_runtime.py": "e2c4da8bd09b2e13a71a80706f7bd37336a5e4dd3d15edac09fa7172aa3fddc6",
+  "docs/CHEMISTRY_BIO_CORRIDOR_MAP.md": "78674eca6f068934eee2d27ee3277ffe1f6b3de626b521c40aa232503b0ccb4e",
+  "docs/TERRY_BUILD_DIRECTIVE.md": "53009aec0d33f652c02458f814e7c222dd2c5c0bcb89eb4472e19d2382e164ed"
+}
