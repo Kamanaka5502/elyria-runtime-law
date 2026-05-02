@@ -1,0 +1,46 @@
+# Proprietary License and Use Restrictions
+
+Copyright (c) 2026 Samantha Greenwell Revita. All rights reserved.
+
+This repository is provided as a public proof surface for Elyria Runtime Law v0.1.
+
+No open-source license is granted.
+
+## Permitted Use
+
+You may view the public repository contents for evaluation, review, and discussion.
+
+## Prohibited Use
+
+Without prior written authorization, you may not:
+
+- copy, reproduce, redistribute, or repackage this repository or any substantial portion of it;
+- use this repository or its concepts to create derivative products, competing systems, or commercial implementations;
+- reverse engineer protected runtime logic, policy structures, consequence-binding methods, receipt/replay patterns, or corridor evaluation mechanisms;
+- deploy this code or any derived mechanism in production, commercial, regulated, or client-facing environments;
+- represent this work as your own, imply authorship, or remove attribution;
+- use this repository to train, fine-tune, benchmark, or derive model behavior for competing governance or execution-control systems.
+
+## Protected Scope
+
+The following remain proprietary and protected:
+
+- runtime law logic;
+- admissibility and consequence-binding methods;
+- corridor evaluation structures;
+- receipt and replay methods;
+- execution-boundary architecture;
+- Veritas / LiveAI / Elyria runtime substrate concepts;
+- implementation patterns not expressly licensed in writing.
+
+## Evaluation Access
+
+Full evaluation, integration, commercial use, or deployment requires a separate written agreement or NDA.
+
+Contact:
+Samantha Greenwell Revita
+SamanthaGreenwellRevita@gmail.com
+
+## No Warranty
+
+This repository is provided as-is for limited review. No warranty, license, or implied commercial right is granted.
