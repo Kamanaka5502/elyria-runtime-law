@@ -1,125 +1,119 @@
 # Elyria Runtime Law v0.1
 
-[![Elyria Runtime Law CI](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml/badge.svg)](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml)
+Consequence admission before effect for AI and automated systems.
 
-**Consequence admission before effect for AI and automated systems.**
+This repository is a proof surface for Elyria Runtime Law.
 
-Elyria Runtime Law evaluates whether a proposed consequence is admissible under live state, and determines whether it is allowed to bind.
+It demonstrates how a proposed action is evaluated at the moment of execution to determine whether it is allowed to become real.
 
-If conditions do not resolve, the consequence does not occur.
-
-This system does not govern actors, workflows, or outputs.
-
-It governs whether continuation is lawful enough to become consequence.
-
----
-
-## Core Invariant
-
-```text
-No consequence is allowed to bind unless admissibility resolves at the moment of execution under current state.
-
-What is not admissible does not become consequence.
-```
+If conditions do not resolve, the action does not occur.
 
 ---
 
 ## Category
 
-```text
-Consequence admission before effect.
-```
-
-Elyria Runtime Law evaluates whether a proposed consequence may enter, remain, redirect, halt, restart, or bind under live state.
-
 This is not:
 
-```text
-AI governance
-execution control
-authorization
-workflow
-audit
-compliance dashboard
-```
+- AI governance
+- authorization
+- workflow control
+- monitoring
+- fraud detection
+- compliance tooling
 
-Those layers may provide inputs. They do not decide whether continuation remains lawful enough to become consequence.
+Those systems provide inputs.
 
----
-
-## Runtime binding law
-
-```text
-Σ_C(x)=⟨Φ(x), A(x), U(x), V(x), B(x), R(x), H(x)⟩
-
-Φ(x)=C(x)-M(x)
-
-Bind ⇔ Φ≥0 ∧ A≥0 ∧ U=1 ∧ x∈Viab(R) ∧ B=0 ∧ H≥H_min
-```
+They do not determine whether consequence binds.
 
 ---
 
-## Runtime outcomes
+## What Elyria Does
 
-```text
-EXECUTE  — lawful support holds; consequence may bind.
-REFUSE   — attempted consequence lacks standing.
-HALT     — continuation stops because support, safety, viability, or breach condition failed.
-REDIRECT — intent may continue only through a different lawful corridor.
-ESCALATE — authorized review required before effect.
-REBOUND  — unsupported pressure returns / reseats; motion cannot continue forward.
-RESTART  — lawful re-entry after judged halt/recovery condition.
-```
+Elyria Runtime Law evaluates:
 
----
+- authority
+- evidence
+- state
+- capacity
+- viability
+- breach conditions
+- continuation coherence
 
-## What this package contains
-
-- FastAPI backend for Elyria Runtime Law v0.1
-- Cyber, Chemistry, and Bio corridor evaluators
-- Consequence-signature evaluation
-- Morphology outcomes beyond allow/deny
-- Deterministic receipt generation
-- Replay verification endpoint
-- Example JSON requests
-- Unit tests
-- Chemistry/Bio corridor map
+before allowing consequence to bind.
 
 ---
 
-## Corridors included
+## Core Principle
 
-```text
-cyber_privileged_action_v0
-chemistry_transformation_v0
-bio_recovery_plan_v0
-```
+A proposed action can be valid, approved, or complete
+and still fail consequence admissibility.
 
-Chemistry and Bio are implemented as **domain corridors** under Elyria Runtime Law. They are not separate governing systems and not separate products in this scaffold.
+If it fails, it does not become real.
 
 ---
 
-## Replay verification
+## Runtime Binding
 
-```text
-same request + same state + same policy + same corridor = same decision receipt
-```
+A consequence binds only when admissibility conditions resolve under live state.
 
----
+If those conditions do not hold, the system returns:
 
-## Commercial Expression
+- REFUSE   → action does not execute  
+- HALT     → continuation stops  
+- REDIRECT → alternate lawful corridor required  
+- ESCALATE → authorized review required  
 
-**One-Corridor Governed Execution Pilot**
-
-A controlled deployment of Elyria Runtime Law over a single high-risk action class, where consequence is admitted or refused at the execution boundary with deterministic proof and replay.
-
-Contact required for evaluation, deployment, or licensing.
+No downstream system receives committed effect unless binding is allowed.
 
 ---
 
-## Core sentence
+## Enforcement
 
-```text
+This system is not advisory.
+
+- REFUSE = no execution  
+- HALT = no continuation  
+- REDIRECT = no forward motion without lawful path  
+
+Execution is prevented, not observed.
+
+---
+
+## Proof Surface
+
+This repository demonstrates:
+
+- deterministic decision outcomes  
+- receipt generation  
+- replay verification  
+- corridor-based evaluation  
+
+Replay rule:
+
+same request + same state + same policy + same corridor = same decision
+
+---
+
+## Architecture (High-Level)
+
+Input → Runtime Law → Decision → Receipt → Replay
+
+No internal decision logic, formulas, or policy structures are exposed.
+
+---
+
+## License
+
+This repository is provided for evaluation only.
+
+No rights to use, reproduce, modify, deploy, or derive commercial systems are granted without written authorization.
+
+See LICENSE.txt for full restrictions.
+
+---
+
+## Core Sentence
+
 Most systems decide whether something may run.
+
 Elyria determines whether continuation is lawful enough to become consequence.
-```
