@@ -1,119 +1,89 @@
 # Elyria Runtime Law v0.1
 
-Consequence admission before effect for AI and automated systems.
+![Elyria Runtime Law CI](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml/badge.svg)
 
-This repository is a proof surface for Elyria Runtime Law.
+**Runtime law for consequence-bearing systems.**
 
-It demonstrates how a proposed action is evaluated at the moment of execution to determine whether it is allowed to become real.
+Most systems govern actors, actions, or outputs.  
+**Elyria governs continuation.**
 
-If conditions do not resolve, the action does not occur.
+The core object is not an action.  
+The core object is attempted becoming: a proposed transition pressing toward consequence.
+
+A proposed action can be possible, requested, authenticated, predicted, or workflow-complete and still fail consequence admissibility.
 
 ---
 
 ## Category
 
+Consequence admission before effect.
+
+Elyria Runtime Law evaluates whether a proposed consequence may enter, remain, redirect, halt, restart, or bind under live state.
+
 This is not:
 
 - AI governance
+- execution control
 - authorization
-- workflow control
-- monitoring
-- fraud detection
-- compliance tooling
+- workflow
+- audit
+- compliance dashboard
 
-Those systems provide inputs.
-
-They do not determine whether consequence binds.
+Those layers may provide inputs.  
+They do not decide whether continuation remains lawful enough to become consequence.
 
 ---
 
-## What Elyria Does
+## Runtime outcomes
 
-Elyria Runtime Law evaluates:
-
-- authority
-- evidence
-- state
-- capacity
-- viability
-- breach conditions
-- continuation coherence
-
-before allowing consequence to bind.
+EXECUTE — lawful support holds; consequence may bind.  
+REFUSE — attempted consequence lacks standing.  
+HALT — continuation stops because support, safety, viability, or breach condition failed.  
+REDIRECT — intent may continue only through a different lawful corridor.  
+ESCALATE — authorized review required before effect.  
+REBOUND — unsupported pressure returns; motion cannot continue forward.  
+RESTART — lawful re-entry after judged halt/recovery condition.
 
 ---
 
-## Core Principle
+## What this package contains
 
-A proposed action can be valid, approved, or complete
-and still fail consequence admissibility.
-
-If it fails, it does not become real.
-
----
-
-## Runtime Binding
-
-A consequence binds only when admissibility conditions resolve under live state.
-
-If those conditions do not hold, the system returns:
-
-- REFUSE   → action does not execute  
-- HALT     → continuation stops  
-- REDIRECT → alternate lawful corridor required  
-- ESCALATE → authorized review required  
-
-No downstream system receives committed effect unless binding is allowed.
+- FastAPI backend for Elyria Runtime Law v0.1
+- Corridor evaluators (cyber / chemistry / bio)
+- Deterministic receipt generation
+- Replay verification endpoint
+- Example JSON requests
+- Unit tests
 
 ---
 
-## Enforcement
+## Run
 
-This system is not advisory.
-
-- REFUSE = no execution  
-- HALT = no continuation  
-- REDIRECT = no forward motion without lawful path  
-
-Execution is prevented, not observed.
+python -m venv .venv  
+source .venv/bin/activate  
+pip install -e ".[dev]"  
+uvicorn app.main:app --reload --port 8001  
 
 ---
 
-## Proof Surface
+## Proof
 
-This repository demonstrates:
+A valid request can still fail consequence admissibility.
 
-- deterministic decision outcomes  
-- receipt generation  
-- replay verification  
-- corridor-based evaluation  
+REFUSE = no execution  
+HALT = no continuation  
 
-Replay rule:
-
-same request + same state + same policy + same corridor = same decision
-
----
-
-## Architecture (High-Level)
-
-Input → Runtime Law → Decision → Receipt → Replay
-
-No internal decision logic, formulas, or policy structures are exposed.
+This system prevents effect. It does not observe it.
 
 ---
 
 ## License
 
-This repository is provided for evaluation only.
-
-No rights to use, reproduce, modify, deploy, or derive commercial systems are granted without written authorization.
-
-See LICENSE.txt for full restrictions.
+Evaluation only. No reuse or derivative rights.
 
 ---
 
-## Core Sentence
+## Core sentence
 
-Most systems decide whether something may run.
-
+Most systems decide whether something may run.  
 Elyria determines whether continuation is lawful enough to become consequence.
