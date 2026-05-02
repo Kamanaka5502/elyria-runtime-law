@@ -1,10 +1,15 @@
 # Proprietary License and Use Restrictions
 
-Copyright (c) 2026 Samantha Greenwell Revita. All rights reserved.
+Copyright (c) 2026 Samantha Greenwell Revita and Terry Snyder. All rights reserved.
 
-This repository is provided as a public proof surface for Elyria Runtime Law v0.1.
+This repository is provided as a public proof surface for Elyria Runtime Law v0.1 under Elyria Systems — VA.
 
 No open-source license is granted.
+
+## Authorship / Stewardship
+
+Elyria Systems — VA
+Samantha Greenwell Revita · Terry Snyder
 
 ## Permitted Use
 
