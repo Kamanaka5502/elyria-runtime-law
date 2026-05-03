@@ -255,7 +255,7 @@ It does not grant rights to reuse, reproduce, modify, deploy, or derive commerci
 
 No internal decision logic, production policy structures, client corridors, examples, tests, schemas, source code, replay internals, or protected runtime substrate are licensed through this repository.
 
-See [`LICENSE.txt`](./LICENSE.txt) for full restrictions.
+See [`LICENSE`](./LICENSE) for full restrictions.
 
 ---
 
