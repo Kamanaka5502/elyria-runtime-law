@@ -1,37 +1,46 @@
 <div align="center">
 
-# Elyria Runtime Law v0.1
+# ELYRIA RUNTIME LAW
 
-### Consequence admission before effect for AI and automated systems
+### Consequence admission before effect
+### Runtime law for consequence-bearing systems
+
+<br />
 
 **ELYRIA SYSTEMS — VA**  
 **Samantha Revita · Terry Snyder**
 
-![License](https://img.shields.io/badge/license-proprietary-red)
+<br />
+
+[![Elyria Runtime Law CI](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml/badge.svg)](https://github.com/Kamanaka5502/elyria-runtime-law/actions/workflows/ci.yml)
 ![Status](https://img.shields.io/badge/status-public%20proof%20surface-gold)
 ![Runtime](https://img.shields.io/badge/runtime-protected%20commercial%20layer-black)
+![License](https://img.shields.io/badge/license-proprietary-red)
+![Category](https://img.shields.io/badge/category-consequence%20admission-blueviolet)
 
-**Runtime law for consequence-bearing systems.**
+<br />
 
-Most systems govern actors, actions, or outputs.  
-**Elyria governs continuation.**
+> **Most systems govern actors, actions, or outputs.**  
+> **Elyria governs continuation.**
+
+<br />
+
+```text
+possible ≠ admissible
+authenticated ≠ standing
+workflow-complete ≠ consequence-safe
+EXECUTE is the only outcome that may bind effect
+```
 
 </div>
 
 ---
 
-## Authorship / Stewardship
+## What this is
 
-**Elyria Systems — VA**  
-**Samantha Revita · Terry Snyder**
+**Elyria Runtime Law** is a public proof surface for a protected runtime category: **consequence admission before effect**.
 
-This repository is a public proof surface for Elyria Runtime Law v0.1.
-
-It is intentionally non-runnable and non-implementation-bearing.
-
----
-
-## Core premise
+It frames the boundary where a proposed transition is evaluated before it is allowed to become consequence.
 
 The core object is not an action.
 
@@ -44,7 +53,18 @@ A proposed action can be possible, requested, authenticated, predicted, or workf
 
 ---
 
-## Category
+## Authorship / stewardship
+
+**Elyria Systems — VA**  
+**Samantha Revita · Terry Snyder**
+
+This repository is intentionally category-protected. It exposes the public proof framing, not the protected production substrate.
+
+It is not a free implementation release.
+
+---
+
+## Category boundary
 
 **Consequence admission before effect.**
 
@@ -181,16 +201,15 @@ This repository shows:
 
 This repository does **not** include:
 
-- runnable backend implementation
 - production source code
+- production protected-action adapters
 - client corridors
 - corridor evaluators
-- example payloads
-- tests
-- schemas
+- private policy structures
+- protected schemas
 - receipt-generation internals
 - replay-verification internals
-- deployment instructions
+- deployment substrate
 
 ---
 
@@ -216,6 +235,18 @@ The protected implementation proving this behavior is retained outside the publi
 
 ---
 
+## Production enforcement direction
+
+The production target is consequence-binding enforcement:
+
+```text
+No protected action reaches effect unless the governed boundary resolves EXECUTE.
+```
+
+See [`docs/PRODUCTION_ENFORCEMENT_FABRIC.md`](./docs/PRODUCTION_ENFORCEMENT_FABRIC.md) for the production build direction.
+
+---
+
 ## Protected scope
 
 This repository is publicly visible for evaluation of the concept, category, and proof framing only.
@@ -234,6 +265,12 @@ See [`LICENSE.txt`](./LICENSE.txt) for full restrictions.
 
 **Most systems decide whether something may run.**  
 **Elyria determines whether continuation is lawful enough to become consequence.**
+
+<br />
+
+**Authority to enter is not authority to remain.**
+
+<br />
 
 **ELYRIA SYSTEMS — VA**  
 **Samantha Revita · Terry Snyder**
