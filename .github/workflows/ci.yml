@@ -1,0 +1,19 @@
+name: Elyria Runtime Law CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate repository surface
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -d docs
+          echo "Elyria Runtime Law public surface present"
