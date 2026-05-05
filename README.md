@@ -18,6 +18,12 @@
 ![License](https://img.shields.io/badge/license-proprietary-red)
 ![Category](https://img.shields.io/badge/category-consequence%20admission-blueviolet)
 ![Open Source](https://img.shields.io/badge/open_source-no-red)
+![15D](https://img.shields.io/badge/15D-standing_geometry-0f172a)
+![Replay](https://img.shields.io/badge/proof-receipt_%2B_replay-green)
+
+<br />
+
+![Elyria Runtime Law 15D Hero](assets/runtime_law_15d_executive_hero.svg)
 
 <br />
 
@@ -51,6 +57,27 @@ A proposed action can be possible, requested, authenticated, predicted, or workf
 
 > **Most systems decide whether something may run.**  
 > **Elyria determines whether continuation is lawful enough to become consequence.**
+
+---
+
+## Public 15D standing geometry
+
+This repository uses **15D standing geometry** as a public category marker.
+
+It names the visible governing dimensions without exposing private runtime law, production thresholds, customer corridors, protected evaluator logic, or deployment-sensitive machinery.
+
+```text
+authority · custody · evidence · state · policy
+continuity · revocation · risk · capacity · failure behavior
+receipt basis · replay basis · thermo-standing · corridor standing · standing decay
+```
+
+Public rule:
+
+```text
+Show the geometry.
+Do not disclose the machinery.
+```
 
 ---
 
@@ -219,6 +246,7 @@ This repository shows:
 - runtime outcome morphology
 - receipt / replay direction
 - protected-scope boundaries
+- public 15D standing-geometry markers
 
 This repository does **not** include:
 
