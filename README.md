@@ -17,6 +17,7 @@
 ![Runtime](https://img.shields.io/badge/runtime-protected%20commercial%20layer-black)
 ![License](https://img.shields.io/badge/license-proprietary-red)
 ![Category](https://img.shields.io/badge/category-consequence%20admission-blueviolet)
+![Open Source](https://img.shields.io/badge/open_source-no-red)
 
 <br />
 
@@ -50,6 +51,26 @@ A proposed action can be possible, requested, authenticated, predicted, or workf
 
 > **Most systems decide whether something may run.**  
 > **Elyria determines whether continuation is lawful enough to become consequence.**
+
+---
+
+## Reviewer path
+
+For public review, start here:
+
+```text
+README.md
+REVIEWER_BRIEF.md
+PROJECT_STATUS.md
+PROTECTED_SCOPE.md
+SECURITY.md
+COMMERCIAL_ACCESS.md
+CONTRIBUTING.md
+LICENSE
+docs/PRODUCTION_ENFORCEMENT_FABRIC.md
+```
+
+This repository is intentionally bounded. It exposes category framing, public runtime-law vocabulary, and production enforcement direction. It does not expose the protected production substrate.
 
 ---
 
@@ -247,13 +268,25 @@ See [`docs/PRODUCTION_ENFORCEMENT_FABRIC.md`](./docs/PRODUCTION_ENFORCEMENT_FABR
 
 ---
 
-## Protected scope
+## Protected scope and access
 
 This repository is publicly visible for evaluation of the concept, category, and proof framing only.
 
 It does not grant rights to reuse, reproduce, modify, deploy, or derive commercial systems.
 
 No internal decision logic, production policy structures, client corridors, examples, tests, schemas, source code, replay internals, or protected runtime substrate are licensed through this repository.
+
+Review these boundary files before interpreting the repo:
+
+```text
+PROTECTED_SCOPE.md
+SECURITY.md
+COMMERCIAL_ACCESS.md
+CONTRIBUTING.md
+REVIEWER_BRIEF.md
+PROJECT_STATUS.md
+LICENSE
+```
 
 See [`LICENSE`](./LICENSE) for full restrictions.
 
